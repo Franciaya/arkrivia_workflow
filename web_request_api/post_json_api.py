@@ -1,7 +1,7 @@
 import requests
 import json
 
-with open("generate_data/keys/patient_api_key.json", "r") as key_gen:
+with open("data_generation/keys/patient_api_key.json", "r") as key_gen:
     key = json.load(key_gen)
 
 with open("generate_data/data/patient_data.json", "r") as customer_data:
