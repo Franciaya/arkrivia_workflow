@@ -9,13 +9,15 @@ spark = SparkSession.builder \
     .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog") \
     .getOrCreate()
 
+with open("config/kafka_config.json", "r") as config_file:
+    kafka_config = json.load(config_file)
+
 # Kafka consumer properties
-KAFKA_BROKER = 'your_kafka_broker_address'
-KAFKA_TOPIC = 'your_topic_name'
+KAFKA_BROKER = kafka_config.get("broker")
+KAFKA_TOPIC = kafka_config.get("broker")
 
 # Read data from Kafka topic
-df_data = spark.readStream \
-    .format("kafka") \
+df_data = spark.readStream.format("kafka") \
     .option("kafka.bootstrap.servers", KAFKA_BROKER) \
     .option("subscribe", KAFKA_TOPIC) \
     .load()
@@ -27,7 +29,7 @@ df_data = df_data.selectExpr("CAST(value AS STRING) as json_data")
 df_data = spark.read.json(df_data.rdd.map(lambda x: x.json_data))
 
 # Load JSON config file for transformations
-with open('config.json') as data_file:
+with open('config/spark_config.json') as data_file:
     config = json.load(data_file)
 
 # Create transformations based on the config
