@@ -6,9 +6,9 @@ from kafka import KafkaProducer
 with open("config/kafka_config.json") as data_file:
     kafka_config = json.load(data_file)
 
-KAFKA_BROKER = kafka_config["broker"]
-KAFKA_TOPIC = kafka_config["topic"]
-DATA_FILE = kafka_config["data_file"]
+KAFKA_BROKER = kafka_config.get("broker")
+KAFKA_TOPIC = kafka_config.get("topic")
+DATA_FILE = kafka_config.get("data_file")
 
 def load_patient_data(file_path):
     # Load patient data from a JSON file

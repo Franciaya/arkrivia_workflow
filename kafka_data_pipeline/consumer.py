@@ -14,7 +14,7 @@ with open("config/kafka_config.json", "r") as config_file:
 
 # Kafka consumer properties
 KAFKA_BROKER = kafka_config.get("broker")
-KAFKA_TOPIC = kafka_config.get("broker")
+KAFKA_TOPIC = kafka_config.get("topic")
 
 # Read data from Kafka topic
 df_data = spark.readStream.format("kafka") \
