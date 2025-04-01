@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
 import json
-from spark_data_processing.spark_transform import RegionTransform, ReplaceTransform, RemovePostcodeSectionTransform
+from spark_data_transformation.spark_transform import RegionTransform, ReplaceTransform, RemovePostcodeSectionTransform
 
 # Initialize Spark session
 spark = SparkSession.builder \
