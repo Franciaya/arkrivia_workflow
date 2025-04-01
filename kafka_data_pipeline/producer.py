@@ -22,7 +22,7 @@ def send_patient_data():
     """Send patient data to Kafka."""
     producer = KafkaProducer(
         bootstrap_servers=KAFKA_BROKER,
-        value_serializer=lambda v: json.dumps(v).encode("utf-8")
+        value_serializer=lambda x: json.dumps(x).encode("utf-8")
     )
 
     # Load generated patient data
@@ -30,11 +30,11 @@ def send_patient_data():
 
     for record in patient_data:
         producer.send(KAFKA_TOPIC, value=record)
-        print(f"📤 Sent: {record}")
+        print(f"Forwarded: {record}")
 
     producer.flush()
     producer.close()
-    print(f"✅ Successfully sent {len(patient_data)} records to Kafka topic: {KAFKA_TOPIC}")
+    print(f"Successfully sent {len(patient_data)} records to Kafka topic: {KAFKA_TOPIC}")
 
 if __name__ == "__main__":
     send_patient_data()

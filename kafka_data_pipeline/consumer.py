@@ -44,7 +44,7 @@ for transform_config in config['transforms']:
 
 # Apply all transformations to the DataFrame
 for transform in transforms:
-    df_data = transform.apply(df_data)
+    df_data = transform.create_new_col(df_data)
 
 # Write transformed data directly to Delta table without storing raw data
 df_data.writeStream \
