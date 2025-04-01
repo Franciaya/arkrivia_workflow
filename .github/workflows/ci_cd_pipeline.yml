@@ -1,0 +1,50 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: Run Unit Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+
+      - name: Install Dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run Linting
+        run: |
+          pip install flake8 black
+          black --check .
+          flake8 .
+
+      - name: Run Unit Tests
+        run: |
+          pip install pytest
+          pytest tests/
+
+  deploy:
+    name: Deploy Application
+    needs: test  # Only runs if the "test" job succeeds
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Deploy to Server (Example using AWS S3)
+        run: |
+          pip install boto3
+          python deploy.py

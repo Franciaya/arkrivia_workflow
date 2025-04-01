@@ -1,0 +1,16 @@
+[
+    {
+        "PatientId": "1",
+        "PatientName": "John Doe",
+        "City": "London",
+        "PostCode": "OX3 1AB",
+        "Disease": "Depression"
+    },
+    {
+        "PatientId": "2",
+        "PatientName": "Jane Doe",
+        "City": "Oxford",
+        "PostCode": "WC1H 8EF",
+        "Disease": "Schizophrenia"
+    }
+]

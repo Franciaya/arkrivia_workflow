@@ -1,0 +1,6 @@
+requests
+faker
+pandas
+pyspark
+kafka
+pytest

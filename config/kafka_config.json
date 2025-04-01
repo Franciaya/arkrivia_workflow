@@ -1,0 +1,5 @@
+{
+    "broker": "localhost:9092",
+    "topic": "patient_topic",
+    "data_file": "data/patient_data.json"
+}
