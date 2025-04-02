@@ -1,6 +1,6 @@
 import json
 import pytest
-import spark_data_processing.spark_transform as transform  
+import spark_process.spark_transform as transform  
 
 @pytest.fixture
 def test_data():
