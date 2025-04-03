@@ -12,6 +12,9 @@ def create_spark_session():
         .appName("KafkaConsumerAndTransform") \
         .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension") \
         .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog") \
+        .config("spark.jars.packages", 
+                "io.delta:delta-core_2.12:2.4.0",
+                "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.5") \
         .getOrCreate()
 
 def load_kafka_config(config_path="config/kafka_config.json"):
