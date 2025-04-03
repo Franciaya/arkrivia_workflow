@@ -19,7 +19,7 @@ def load_patient_data(file_path):
         return json.load(f)
 
 def send_patient_data():
-    """Send patient data to Kafka."""
+    # Send patient data to Kafka
     producer = KafkaProducer(
         bootstrap_servers=KAFKA_BROKER,
         value_serializer=lambda x: json.dumps(x).encode("utf-8")
