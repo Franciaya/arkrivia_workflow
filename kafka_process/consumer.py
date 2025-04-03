@@ -4,7 +4,7 @@ from spark_process.spark_transform import RegionTransform, ReplaceTransform, Rem
 
 def create_spark_session():
     return SparkSession.builder \
-        .appName("KafkaPatientConsumerAndTransform") \
+        .appName("KafkaConsumerAndTransform") \
         .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension") \
         .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog") \
         .getOrCreate()
