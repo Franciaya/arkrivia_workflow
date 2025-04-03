@@ -1,5 +1,10 @@
 from pyspark.sql import SparkSession
 import json
+import sys
+import os
+# Add the parent directory of 'my_proj' to the Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from spark_process.spark_transform import RegionTransform, ReplaceTransform, RemovePostcodeSectionTransform
 
 def create_spark_session():
