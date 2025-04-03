@@ -19,9 +19,9 @@ def read_kafka_stream(spark, kafka_config):
         .option("subscribe", kafka_config.get("topic")) \
         .load()
 
-def parse_kafka_messages(spark, df):  # Added spark as argument
-    df = df.selectExpr("CAST(value AS STRING) as json_data")
-    return spark.read.json(df.rdd.map(lambda x: x.json_data))  # Use spark passed as argument
+def parse_kafka_messages(spark, df_data):  # Added spark as argument
+    df_data = df_data.selectExpr("CAST(value AS STRING) as json_data")
+    return spark.read.json(df_data.rdd.map(lambda x: x.json_data))  # Use spark passed as argument
 
 def load_transforms(config_path='config/spark_config.json'):
     with open(config_path) as data_file:
@@ -38,13 +38,13 @@ def load_transforms(config_path='config/spark_config.json'):
     
     return transforms
 
-def apply_transformations(df, transforms):
+def apply_transformations(df_data, transforms):
     for transform in transforms:
-        df = transform.create_new_col(df)
-    return df
+        df_data = transform.create_new_col(df_data)
+    return df_data
 
-def write_to_delta(df):
-    df.writeStream \
+def write_to_delta(df_data):
+    df_data.writeStream \
         .format("delta") \
         .outputMode("append") \
         .option("checkpointLocation", "data/checkpoints") \
