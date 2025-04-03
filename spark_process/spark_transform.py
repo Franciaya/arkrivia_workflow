@@ -7,13 +7,13 @@ class Transform:
     def __init__(self, config):
         self.config = config
     
-    def create_new_col(self, df_data):
+    def modify_or_create(self, df_data):
         raise NotImplementedError("Subclasses should implement this method.")
 
 # Concrete Transformation Classes
 
 class RegionTransform(Transform):
-    def create_new_col(self, df_data):
+    def modify_or_create(self, df_data):
         mapping = self.config['mapping']
         return df_data.withColumn(
             "Region",
@@ -23,11 +23,11 @@ class RegionTransform(Transform):
         )
 
 class ReplaceTransform(Transform):
-    def create_new_col(self, df_data):
+    def modify_or_create(self, df_data):
         return df_data.withColumn("PatientName", fs.lit(self.config['new_value']))
 
 class RemovePostcodeSectionTransform(Transform):
-    def create_new_col(self, df_data):
+    def modify_or_create(self, df_data):
         return df_data.withColumn(
             "PostCode",
             fs.when(fs.col("PostCode").contains(" "), fs.col("PostCode").substr(1, fs.col("PostCode").find(" ")-1)).otherwise(fs.col("PostCode"))

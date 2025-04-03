@@ -40,7 +40,7 @@ def load_transforms(config_path='config/spark_config.json'):
 
 def apply_transformations(df_data, transforms):
     for transform in transforms:
-        df_data = transform.create_new_col(df_data)
+        df_data = transform.modify_or_create(df_data)
     return df_data
 
 def write_to_delta(df_data):
