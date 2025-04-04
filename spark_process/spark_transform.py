@@ -26,9 +26,17 @@ class ReplaceTransform(Transform):
     def modify_or_create(self, df_data):
         return df_data.withColumn("PatientName", fs.lit(self.config['new_value']))
 
+
 class RemovePostcodeSectionTransform(Transform):
     def modify_or_create(self, df_data):
+        # Find the position of the first space in PostCode
+        pos_space = fs.instr(fs.col("PostCode"), " ")
+
+        # Use substring function to extract only the part before the first space
         return df_data.withColumn(
             "PostCode",
-            fs.when(fs.col("PostCode").contains(" "), fs.col("PostCode").substr(1, fs.col("PostCode").find(" ")-1)).otherwise(fs.col("PostCode"))
+            fs.when(
+                pos_space > 1,  # Ensure there is a space in the PostCode
+                fs.col("PostCode").substr(fs.lit(1), pos_space - fs.lit(1) ) # Extract substring before the first space
+            ).otherwise(fs.col("PostCode"))  # If no space, keep original
         )

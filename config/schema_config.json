@@ -1,0 +1,10 @@
+{
+    "fields": [
+      {"name": "PatientId", "type": "IntegerType", "nullable": true},
+      {"name": "PatientName", "type": "StringType", "nullable": true},
+      {"name": "City", "type": "StringType", "nullable": true},
+      {"name": "PostCode", "type": "StringType", "nullable": true},
+      {"name": "Disease", "type": "StringType", "nullable": true}
+    ]
+  }
+  
