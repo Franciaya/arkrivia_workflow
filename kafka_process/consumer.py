@@ -1,25 +1,28 @@
 import json
-import sys
+import pyspark
 import os
+from delta import *
+from dotenv import load_dotenv
 from pyspark.sql import SparkSession
+from delta import configure_spark_with_delta_pip
 from pyspark.sql.functions import col, from_json
 from pyspark.sql.types import StructType, StructField, IntegerType, StringType
-
-# Add the parent directory of 'my_proj' to the Python path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
 from spark_process.spark_transform import RegionTransform, ReplaceTransform, RemovePostcodeSectionTransform
 
+
+load_dotenv()
+
+spark_packages = os.getenv("SPARK_PACKAGES")
+
 def create_spark_session():
-    spark = SparkSession.builder \
-        .appName("KafkaConsumerAndTransform") \
+
+    builder = pyspark.sql.SparkSession.builder.appName("KafkaConsumerAndTransform") \
         .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension") \
-        .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog") \
-        .config("spark.jars.packages", 
-                "io.delta:delta-core_2.12:3.1.0," \
-                "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.5") \
-        .getOrCreate()
-    spark.sparkContext.setLogLevel("INFO")  # Set log level to INFO
+        .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog")
+    
+    spark = configure_spark_with_delta_pip(builder, extra_packages=[spark_packages]).getOrCreate()
+
+    # spark.sparkContext.setLogLevel("INFO")  # Set log level to INFO
     return spark
 
 def load_kafka_config(config_path="config/kafka_config.json"):
@@ -52,12 +55,24 @@ def read_kafka_stream(spark, kafka_config):
     return spark.readStream.format("kafka") \
         .option("kafka.bootstrap.servers", kafka_config.get("broker")) \
         .option("subscribe", kafka_config.get("topic")) \
+        .option("startingOffsets", "earliest") \
         .load()
 
 def parse_kafka_messages(spark, df_data, schema):  # Pass the schema to this function
-    return df_data.selectExpr("CAST(value AS STRING) as json_data") \
+
+    df_data = df_data.selectExpr("CAST(value AS STRING) as json_data") \
         .select(from_json(col("json_data"), schema).alias("json_data")) \
-        .select("json_data.*")
+        .select("json_data.*") \
+        .filter("PatientId IS NOT NULL AND PatientName IS NOT NULL")
+    
+    # debugging purposes
+    # df_data.writeStream \
+    #     .outputMode("append") \
+    #     .format("console") \
+    #     .option("truncate", "false") \
+    #     .start() 
+
+    return df_data
 
 def load_transforms(config_path='config/spark_config.json'):
     with open(config_path) as data_file:
@@ -77,6 +92,7 @@ def load_transforms(config_path='config/spark_config.json'):
 def apply_transformations(df_data, transforms):
     for transform in transforms:
         df_data = transform.modify_or_create(df_data)
+
     return df_data
 
 def write_to_delta(df_data):
@@ -102,11 +118,14 @@ def main():
     # Load and apply transformations
     transforms = load_transforms()
     df_data = apply_transformations(df_data, transforms)
-    
+
+
     # Write data to Delta Lake
     write_to_delta(df_data)
     
     print("Kafka consumer is processing data, transforming, and writing directly to Delta Table.")
+
+    spark.streams.awaitAnyTermination()
 
 if __name__ == "__main__":
     main()

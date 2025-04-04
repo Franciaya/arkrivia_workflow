@@ -4,3 +4,5 @@ pandas
 pyspark
 kafka
 pytest
+dotenv
+delta
