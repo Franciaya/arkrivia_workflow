@@ -1,0 +1,5 @@
+{
+    "workspace_url": "https://dbc-67242ff7-8f81.cloud.databricks.com",
+    "access_token": "dapi1476551913e7b92b4cfed8e76f643f8e",
+    "dbfs_path": "dbfs:/mnt/delta/patients_transformed"
+}

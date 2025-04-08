@@ -95,37 +95,80 @@ def apply_transformations(df_data, transforms):
 
     return df_data
 
-def write_to_delta(df_data):
+def load_databricks_config(path="config/databricks_config.json"):
+    with open(path, "r") as file:
+        return json.load(file)
+    
+
+# def write_to_delta(df_data):
+#     df_data.writeStream \
+#         .format("delta") \
+#         .outputMode("append") \
+#         .option("checkpointLocation", "data/checkpoints") \
+#         .start("data/delta/patients_transformed") 
+
+def write_to_delta(df_data, target="local", config_path="config/databricks_config.json"):
+
+    if target == "local":
+        output_path = "data/delta/patients_transformed"
+        checkpoint_path = "data/checkpoints"
+    elif target == "databricks":
+        databricks_config = load_databricks_config(config_path)
+        output_path = databricks_config["dbfs_path"]
+        checkpoint_path = output_path + "_checkpoints"
+    else:
+        raise ValueError("Invalid target specified. Use 'local' or 'databricks'.")
+
     df_data.writeStream \
         .format("delta") \
         .outputMode("append") \
-        .option("checkpointLocation", "data/checkpoints") \
-        .start("data/delta/patients_transformed") 
+        .option("checkpointLocation", checkpoint_path) \
+        .start(output_path)
+
+
+# def main():
+#     spark = create_spark_session()
+    
+#     # Load the Kafka configuration and the schema
+#     kafka_config = load_kafka_config()
+#     schema = load_schema_from_config("config/schema_config.json")  # Load schema dynamically
+    
+#     # Read Kafka stream
+#     df_data = read_kafka_stream(spark, kafka_config)
+    
+#     # Parse the Kafka messages using the schema
+#     df_data = parse_kafka_messages(spark, df_data, schema)  # Pass the schema here
+    
+#     # Load and apply transformations
+#     transforms = load_transforms()
+#     df_data = apply_transformations(df_data, transforms)
+
+
+#     # Write data to Delta Lake
+#     write_to_delta(df_data)
+    
+#     print("Kafka consumer is processing data, transforming, and writing directly to Delta Table.")
+
+#     spark.streams.awaitAnyTermination()
 
 def main():
+
     spark = create_spark_session()
-    
-    # Load the Kafka configuration and the schema
     kafka_config = load_kafka_config()
-    schema = load_schema_from_config("config/schema_config.json")  # Load schema dynamically
-    
-    # Read Kafka stream
+    schema = load_schema_from_config("config/schema_config.json")
+
     df_data = read_kafka_stream(spark, kafka_config)
-    
-    # Parse the Kafka messages using the schema
-    df_data = parse_kafka_messages(spark, df_data, schema)  # Pass the schema here
-    
-    # Load and apply transformations
+    df_data = parse_kafka_messages(spark, df_data, schema)
+
     transforms = load_transforms()
     df_data = apply_transformations(df_data, transforms)
 
-
-    # Write data to Delta Lake
+    # Choose where to write — "local" or "databricks"
     write_to_delta(df_data)
-    
-    print("Kafka consumer is processing data, transforming, and writing directly to Delta Table.")
 
+    print("Kafka consumer is processing data and writing to Delta Table.")
     spark.streams.awaitAnyTermination()
+
 
 if __name__ == "__main__":
     main()
