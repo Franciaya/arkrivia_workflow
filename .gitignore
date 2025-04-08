@@ -1,4 +1,4 @@
 .env
 data/checkpoints/
 data/delta/
-databricks_config.json
+config/databricks_config.json
