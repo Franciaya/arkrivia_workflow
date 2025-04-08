@@ -6,8 +6,8 @@ from spark_process.spark_transform import RegionTransform, ReplaceTransform, Rem
 # Load test data dynamically from the JSON file
 @pytest.fixture
 def test_data():
-    with open("tests/test_data.json", "r") as f:
-        return json.load(f)
+    with open("tests/test_data.json", "r") as json_file:
+        return json.load(json_file)
 
 @pytest.fixture(scope="class")
 def spark_session():
