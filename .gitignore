@@ -2,3 +2,4 @@
 data/checkpoints/
 data/delta/
 config/databricks_config.json
+.github/workflow/ci_cd_pipeline.yml
