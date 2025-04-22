@@ -4,10 +4,10 @@ import json
 with open("data_generation/keys/patient_api_key.json", "r") as key_gen:
     key = json.load(key_gen)
 
-with open("generate_data/data/patient_data.json", "r") as customer_data:
+with open("data/patient_data.json", "r") as customer_data:
     data = json.load(customer_data)
 
-API_KEY = key["API_KEYS"][0]["API_KEY"] 
+API_KEY = key["API_KEYS"][0]["API_KEY"]
 BIN_API_URL = "https://api.jsonbin.io/v3/b"
 
 headers = {
@@ -25,8 +25,8 @@ else:
     print(f"Error: {response.text}")
 
 if bin_id:
-    key["API_KEYS"][0]["BIN_ID"].append({"ID": bin_id}) 
-    with open("generate_data/keys/patient_api_key.json", "w") as key_data:
-        json.dump(key, key_data, indent= 4)
+    key["API_KEYS"][0]["BIN_ID"].append({"ID": bin_id})
+    with open("data_genaration/keys/patient_api_key.json", "w") as key_data:
+        json.dump(key, key_data, indent=4)
 
 print("BIN_ID added successfully!")

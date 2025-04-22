@@ -11,6 +11,7 @@ headers = {
     "X-Master-Key": API_KEY,
 }
 
+
 def get_jsonbin_api():
     response = requests.get(BIN_API_URL, headers=headers)
 
@@ -19,8 +20,12 @@ def get_jsonbin_api():
     else:
         print(f"Error: {response.text} with status code ", response.status_code)
         return None
-    
+
 
 if __name__ == "__main__":
     data = get_jsonbin_api()
-    print("Retrieved Data: {data_returned}".format(data_returned=data) if data else "Empty data returned" )
+    print(
+        "Retrieved Data: {data_returned}".format(data_returned=data)
+        if data
+        else "Empty data returned"
+    )

@@ -1,27 +1,33 @@
 import json
 import pytest
 from unittest.mock import patch, MagicMock
-from kafka import KafkaProducer
-from kafka_process.producer import load_patient_data, send_patient_data  # Replace with actual script name
+from kafka_process.producer import (
+    load_patient_data,
+    send_patient_data,
+)  # Replace with actual script name
 
 # Load Kafka config and test data from actual files for the test
-with open("config/kafka_config.json", "r") as f:
-    kafka_config = json.load(f)
+with open("tests/test_kafka_config.json", "r") as data_file:
+    kafka_config = json.load(data_file)
 
 KAFKA_BROKER = kafka_config.get("broker")
 KAFKA_TOPIC = kafka_config.get("topic")
 DATA_FILE = kafka_config.get("data_file")
 
+
 @pytest.fixture
 def test_data():
     # Load the test patient data from the JSON file dynamically
-    with open(DATA_FILE, "r") as f:
-        return json.load(f)
+    with open(DATA_FILE, "r") as data_file:
+        return json.load(data_file)
 
-@patch("producer_script.KafkaProducer")  # Mock KafkaProducer
-@patch("producer_script.load_patient_data")  # Mock data loading function
-@patch("producer_script.json.load")  # Mock JSON loading function
-def test_send_patient_data(mock_json_load, mock_load_patient_data, mock_kafka_producer, test_data):
+
+@patch("kafka_process.producer.KafkaProducer")
+@patch("kafka_process.producer.load_patient_data")
+@patch("kafka_process.producer.json.load")
+def test_send_patient_data(
+    mock_json_load, mock_load_patient_data, mock_kafka_producer, test_data
+):
     # Use the dynamically loaded test data
     mock_load_patient_data.return_value = test_data
 
@@ -46,11 +52,12 @@ def test_send_patient_data(mock_json_load, mock_load_patient_data, mock_kafka_pr
     mock_producer_instance.flush.assert_called_once()
     mock_producer_instance.close.assert_called_once()
 
+
 def test_load_patient_data():
     # Load actual test data from file
     result = load_patient_data(DATA_FILE)
 
-    with open(DATA_FILE, "r") as f:
-        expected_data = json.load(f)
+    with open(DATA_FILE, "r") as fs:
+        expected_data = json.load(fs)
 
     assert result == expected_data

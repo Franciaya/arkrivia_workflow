@@ -1,12 +1,12 @@
 import json
 import requests
 import random
-import os  # Import os to handle directories
 from faker import Faker
 
 fake = Faker()
 
 API_URL = "https://api.postcodes.io/random/postcodes"
+
 
 def get_random_city_postcode():
     """Fetch a random city and postcode from an API, ensuring it's in England or Wales."""
@@ -18,6 +18,7 @@ def get_random_city_postcode():
             if country in ["England", "Wales"]:  # Ensure it's from England or Wales
                 return data["result"]["admin_district"], data["result"]["postcode"]
     return "Unknown", "Unknown"
+
 
 def generate_patient_data(n=1000):
     """Generate fake patient data for patients in England and Wales only."""
@@ -31,20 +32,21 @@ def generate_patient_data(n=1000):
             "PatientName": fake.name(),
             "City": city,
             "PostCode": postcode,
-            "Disease": random.choice(diseases)
+            "Disease": random.choice(diseases),
         }
-    # while len(patients) < n:
-    #     city, postcode = get_random_city_postcode()
-    #     patient = {
-    #         "PatientId": str(fake.uuid4()),  # Ensure UUID is string
-    #         "PatientName": fake.name(),
-    #         "City": city,
-    #         "PostCode": postcode,
-    #         "Disease": random.choice(diseases)
-    #     }
+        # while len(patients) < n:
+        #     city, postcode = get_random_city_postcode()
+        #     patient = {
+        #         "PatientId": str(fake.uuid4()),  # Ensure UUID is string
+        #         "PatientName": fake.name(),
+        #         "City": city,
+        #         "PostCode": postcode,
+        #         "Disease": random.choice(diseases)
+        #     }
         patients.append(patient)
 
     return patients
+
 
 if __name__ == "__main__":
 

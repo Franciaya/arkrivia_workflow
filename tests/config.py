@@ -1,6 +1,6 @@
 # Test parameters (hardcoded values allowed)
-TEST_DATA_SIZE = 10  
-TEST_DATA_PATH = "data/patient_data.json"  
+TEST_DATA_SIZE = 10
+TEST_DATA_PATH = "data/patient_data.json"
 
 # Kafka settings
 KAFKA_BROKER = "localhost:9092"

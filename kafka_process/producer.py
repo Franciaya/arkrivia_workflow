@@ -10,6 +10,7 @@ KAFKA_BROKER = kafka_config.get("broker")
 KAFKA_TOPIC = kafka_config.get("topic")
 DATA_FILE = kafka_config.get("data_file")
 
+
 def load_patient_data(file_path):
     # Load patient data from a JSON file
     if not os.path.exists(file_path):
@@ -18,11 +19,12 @@ def load_patient_data(file_path):
     with open(file_path, "r") as f:
         return json.load(f)
 
+
 def send_patient_data():
     # Send patient data to Kafka
     producer = KafkaProducer(
         bootstrap_servers=KAFKA_BROKER,
-        value_serializer=lambda x: json.dumps(x).encode("utf-8")
+        value_serializer=lambda x: json.dumps(x).encode("utf-8"),
     )
 
     # Load generated patient data
@@ -34,7 +36,10 @@ def send_patient_data():
 
     producer.flush()
     producer.close()
-    print(f"Successfully sent {len(patient_data)} records to Kafka topic: {KAFKA_TOPIC}")
+    print(
+        f"Successfully sent {len(patient_data)} records to Kafka topic: {KAFKA_TOPIC}"
+    )
+
 
 if __name__ == "__main__":
     send_patient_data()

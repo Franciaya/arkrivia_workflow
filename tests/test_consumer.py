@@ -1,13 +1,19 @@
 import json
 import pytest
 from pyspark.sql import SparkSession
-from spark_process.spark_transform import RegionTransform, ReplaceTransform, RemovePostcodeSectionTransform
+from spark_process.spark_transform import (
+    RegionTransform,
+    ReplaceTransform,
+    RemovePostcodeSectionTransform,
+)
+
 
 # Load test data dynamically from the JSON file
 @pytest.fixture
 def test_data():
     with open("tests/test_data.json", "r") as json_file:
         return json.load(json_file)
+
 
 @pytest.fixture(scope="class")
 def spark_session():
@@ -16,22 +22,33 @@ def spark_session():
     yield spark
     spark.stop()
 
+
 def test_region_transform(spark_session, test_data):
     df_data = spark_session.createDataFrame(test_data)
-    transform = RegionTransform({"name": "Region", "new_col": "region_upper"})
+    transform = RegionTransform(
+        {
+            "mapping": {
+                "North England": ["Leeds", "Manchester"],
+                "Mid-West England": ["Birmingham"],
+            }
+        }
+    )
     df_transformed = transform.modify_or_create(df_data)
     assert "region_upper" in df_transformed.columns
 
+
 def test_replace_transform(spark_session, test_data):
     df_data = spark_session.createDataFrame(test_data)
-    transform = ReplaceTransform({"name": "PatientName", "replace": {"Doe": "Smith"}})
+    transform = ReplaceTransform({"name": "PatientName", "new_value": "XXXXX"})
     df_transformed = transform.modify_or_create(df_data)
-    results = [row.name for row in df_transformed.collect()]
-    assert "John Smith" in results
-    assert "Jane Smith" in results
+    results = [row.PatientName for row in df_transformed.collect()]
+    assert all(name == "XXXXX" for name in results)
+
 
 def test_remove_postcode_section_transform(spark_session, test_data):
     df_data = spark_session.createDataFrame(test_data)
     transform = RemovePostcodeSectionTransform({"name": "PostCode"})
     df_transformed = transform.modify_or_create(df_data)
-    assert all(" " not in row.postcode for row in df_transformed.collect())
+
+    results = [row["PostCode"] for row in df_transformed.collect()]
+    assert all(" " not in val for val in results)

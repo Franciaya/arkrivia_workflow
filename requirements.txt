@@ -5,4 +5,8 @@ pyspark
 kafka
 pytest
 dotenv
-delta
+delta-spark
+apache-airflow
+openjdk
+flake8
+black
