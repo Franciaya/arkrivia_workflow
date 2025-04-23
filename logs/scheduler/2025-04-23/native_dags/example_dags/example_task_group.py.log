@@ -1,0 +1,57 @@
+[2025-04-23T02:28:31.332+0100] {processor.py:186} INFO - Started process (PID=57648) to work on /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py
+[2025-04-23T02:28:31.333+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-04-23T02:28:31.333+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:28:31.333+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py
+[2025-04-23T02:28:31.337+0100] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py
+[2025-04-23T02:28:31.393+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:28:31.393+0100] {override.py:1930} INFO - Created Permission View: can read on DAG:example_task_group
+[2025-04-23T02:28:31.396+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:28:31.396+0100] {override.py:1930} INFO - Created Permission View: can edit on DAG:example_task_group
+[2025-04-23T02:28:31.398+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:28:31.398+0100] {override.py:1930} INFO - Created Permission View: can delete on DAG:example_task_group
+[2025-04-23T02:28:31.404+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:28:31.404+0100] {override.py:1930} INFO - Created Permission View: can read on DAG Run:example_task_group
+[2025-04-23T02:28:31.405+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:28:31.405+0100] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:example_task_group
+[2025-04-23T02:28:31.407+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:28:31.407+0100] {override.py:1930} INFO - Created Permission View: can create on DAG Run:example_task_group
+[2025-04-23T02:28:31.408+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:28:31.408+0100] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:example_task_group
+[2025-04-23T02:28:31.408+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:28:31.408+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T02:28:31.412+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:28:31.412+0100] {dag.py:3262} INFO - Creating ORM DAG for example_task_group
+[2025-04-23T02:28:31.412+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:28:31.412+0100] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-04-23T02:28:31.417+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py took 0.087 seconds
+[2025-04-23T02:29:57.631+0100] {processor.py:186} INFO - Started process (PID=57837) to work on /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py
+[2025-04-23T02:29:57.632+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-04-23T02:29:57.633+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:29:57.633+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py
+[2025-04-23T02:29:57.636+0100] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py
+[2025-04-23T02:29:57.668+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:29:57.668+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T02:29:57.671+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:29:57.671+0100] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-04-23T02:29:57.676+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py took 0.046 seconds
+[2025-04-23T02:31:44.967+0100] {processor.py:186} INFO - Started process (PID=58032) to work on /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py
+[2025-04-23T02:31:44.968+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-04-23T02:31:44.969+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:31:44.969+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py
+[2025-04-23T02:31:44.972+0100] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py
+[2025-04-23T02:31:45.004+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:31:45.004+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T02:31:45.007+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:31:45.007+0100] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-04-23T02:31:45.012+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py took 0.045 seconds
+[2025-04-23T02:32:43.312+0100] {processor.py:186} INFO - Started process (PID=58172) to work on /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py
+[2025-04-23T02:32:43.313+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-04-23T02:32:43.313+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:32:43.313+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py
+[2025-04-23T02:32:43.316+0100] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py
+[2025-04-23T02:32:43.349+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:32:43.349+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T02:32:43.352+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:32:43.352+0100] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-04-23T02:32:43.357+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py took 0.046 seconds
+[2025-04-23T02:34:22.529+0100] {processor.py:186} INFO - Started process (PID=58466) to work on /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py
+[2025-04-23T02:34:22.531+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-04-23T02:34:22.532+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:34:22.532+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py
+[2025-04-23T02:34:22.535+0100] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py
+[2025-04-23T02:34:22.568+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:34:22.568+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T02:34:22.571+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:34:22.571+0100] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-04-23T02:34:22.576+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py took 0.048 seconds
+[2025-04-23T02:35:44.614+0100] {processor.py:186} INFO - Started process (PID=58586) to work on /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py
+[2025-04-23T02:35:44.616+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-04-23T02:35:44.616+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:35:44.616+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py
+[2025-04-23T02:35:44.619+0100] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py
+[2025-04-23T02:35:44.650+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:35:44.650+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T02:35:44.653+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:35:44.653+0100] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-04-23T02:35:44.658+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py took 0.045 seconds
+[2025-04-23T02:37:33.084+0100] {processor.py:186} INFO - Started process (PID=58769) to work on /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py
+[2025-04-23T02:37:33.085+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-04-23T02:37:33.086+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:37:33.086+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py
+[2025-04-23T02:37:33.089+0100] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py
+[2025-04-23T02:37:33.121+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:37:33.121+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T02:37:33.124+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:37:33.124+0100] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-04-23T02:37:33.129+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py took 0.047 seconds

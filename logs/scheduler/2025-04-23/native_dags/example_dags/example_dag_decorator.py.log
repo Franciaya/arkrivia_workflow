@@ -1,0 +1,50 @@
+[2025-04-23T02:29:15.668+0100] {processor.py:186} INFO - Started process (PID=57743) to work on /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-04-23T02:29:15.669+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2025-04-23T02:29:15.669+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:29:15.669+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-04-23T02:29:15.708+0100] {processor.py:925} INFO - DAG(s) 'example_dag_decorator' retrieved from /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-04-23T02:29:15.761+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:29:15.761+0100] {override.py:1930} INFO - Created Permission View: can delete on DAG:example_dag_decorator
+[2025-04-23T02:29:15.763+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:29:15.763+0100] {override.py:1930} INFO - Created Permission View: can edit on DAG:example_dag_decorator
+[2025-04-23T02:29:15.765+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:29:15.765+0100] {override.py:1930} INFO - Created Permission View: can read on DAG:example_dag_decorator
+[2025-04-23T02:29:15.766+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:29:15.766+0100] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:example_dag_decorator
+[2025-04-23T02:29:15.768+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:29:15.768+0100] {override.py:1930} INFO - Created Permission View: can read on DAG Run:example_dag_decorator
+[2025-04-23T02:29:15.769+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:29:15.769+0100] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:example_dag_decorator
+[2025-04-23T02:29:15.771+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:29:15.771+0100] {override.py:1930} INFO - Created Permission View: can create on DAG Run:example_dag_decorator
+[2025-04-23T02:29:15.771+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:29:15.771+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T02:29:15.774+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:29:15.774+0100] {dag.py:3262} INFO - Creating ORM DAG for example_dag_decorator
+[2025-04-23T02:29:15.774+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:29:15.774+0100] {dag.py:4180} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2025-04-23T02:29:15.778+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py took 0.112 seconds
+[2025-04-23T02:31:07.621+0100] {processor.py:186} INFO - Started process (PID=57951) to work on /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-04-23T02:31:07.622+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2025-04-23T02:31:07.622+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:31:07.622+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-04-23T02:31:07.665+0100] {processor.py:925} INFO - DAG(s) 'example_dag_decorator' retrieved from /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-04-23T02:31:07.730+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:31:07.730+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T02:31:07.733+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:31:07.733+0100] {dag.py:4180} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2025-04-23T02:31:07.738+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py took 0.118 seconds
+[2025-04-23T02:32:56.411+0100] {processor.py:186} INFO - Started process (PID=58190) to work on /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-04-23T02:32:56.413+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2025-04-23T02:32:56.413+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:32:56.413+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-04-23T02:32:56.457+0100] {processor.py:925} INFO - DAG(s) 'example_dag_decorator' retrieved from /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-04-23T02:32:56.524+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:32:56.524+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T02:32:56.527+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:32:56.527+0100] {dag.py:4180} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2025-04-23T02:32:56.532+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py took 0.122 seconds
+[2025-04-23T02:35:04.878+0100] {processor.py:186} INFO - Started process (PID=58529) to work on /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-04-23T02:35:04.880+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2025-04-23T02:35:04.881+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:35:04.881+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-04-23T02:35:04.928+0100] {processor.py:925} INFO - DAG(s) 'example_dag_decorator' retrieved from /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-04-23T02:35:04.996+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:35:04.996+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T02:35:04.999+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:35:04.999+0100] {dag.py:4180} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2025-04-23T02:35:05.004+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py took 0.128 seconds
+[2025-04-23T02:36:53.108+0100] {processor.py:186} INFO - Started process (PID=58694) to work on /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-04-23T02:36:53.109+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2025-04-23T02:36:53.110+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:36:53.110+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-04-23T02:36:53.153+0100] {processor.py:925} INFO - DAG(s) 'example_dag_decorator' retrieved from /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-04-23T02:36:53.218+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:36:53.218+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T02:36:53.222+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:36:53.222+0100] {dag.py:4180} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2025-04-23T02:36:53.227+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py took 0.119 seconds
+[2025-04-23T02:38:43.135+0100] {processor.py:186} INFO - Started process (PID=59031) to work on /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-04-23T02:38:43.137+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2025-04-23T02:38:43.138+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:38:43.138+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-04-23T02:38:43.181+0100] {processor.py:925} INFO - DAG(s) 'example_dag_decorator' retrieved from /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-04-23T02:38:43.248+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:38:43.248+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T02:38:43.251+0100] {logging_mixin.py:190} INFO - [2025-04-23T02:38:43.251+0100] {dag.py:4180} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2025-04-23T02:38:43.256+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/venvs_projects/my_proj/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py took 0.122 seconds

@@ -1,34 +1,40 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
-from kafka_process.producer import produce_data  # Import from Kafka scripts
-from kafka_process.consumer import consume_and_transform  # Import from Kafka consumer
-from spark_process.spark_transform import (
-    transform_data,
-)  # Import Spark transformation script
+from datetime import datetime, timedelta
+from kafka_process.producer_jsonbin import send_patient_data
+from kafka_process.consumer import main 
 
 
 default_args = {
-    "owner": "airflow",
-    "retries": 1,
+    'owner': 'airflow',
+    'depends_on_past': False,
+    'start_date': datetime(2025, 4, 22),
+    'retries': 1,
+    'retry_delay': timedelta(minutes=1),
 }
 
-dag = DAG("data_ingestion_dag", default_args=default_args, schedule_interval="@daily")
+dag = DAG(
+    'kafka_spark_delta_pipeline',
+    default_args=default_args,
+    description='Ingest from API using Kafka producer and stream to Delta via Spark',
+    schedule_interval='@once',
+    catchup=False
+)
+
+# Task 1: Ingest data from API using Kafka producer
+produce_data = PythonOperator(
+    task_id='run_kafka_producer',
+    python_callable=send_patient_data,
+    dag=dag,
+)
 
 
-# Define your Airflow tasks
-def ingestion_task():
-    # Call your ingestion logic here
-    pass
+# Task 2: Consume, transform and load data to Delta Lake
+consume_data = PythonOperator(
+    task_id='run_kafka_spark_consumer_transformer',
+    python_callable=main,
+    dag=dag,
+)
 
 
-def kafka_task():
-    # Call Kafka produce and consume functions
-    pass
-
-
-def spark_task():
-    # Call Spark transformation logic
-    pass
-
-
-# Define the DAG and tasks as per your workflow
+produce_data >> consume_data
