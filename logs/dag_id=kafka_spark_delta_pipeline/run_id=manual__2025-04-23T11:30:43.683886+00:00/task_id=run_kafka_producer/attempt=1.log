@@ -1,0 +1,29 @@
+[2025-04-23T12:30:52.443+0100] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-23T12:30:52.447+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: kafka_spark_delta_pipeline.run_kafka_producer manual__2025-04-23T11:30:43.683886+00:00 [queued]>
+[2025-04-23T12:30:52.448+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: kafka_spark_delta_pipeline.run_kafka_producer manual__2025-04-23T11:30:43.683886+00:00 [queued]>
+[2025-04-23T12:30:52.448+0100] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-23T12:30:52.452+0100] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): run_kafka_producer> on 2025-04-23 11:30:43.683886+00:00
+[2025-04-23T12:30:52.454+0100] {standard_task_runner.py:72} INFO - Started process 86443 to run task
+[2025-04-23T12:30:52.458+0100] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'kafka_spark_delta_pipeline', 'run_kafka_producer', 'manual__2025-04-23T11:30:43.683886+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/data_pipelines.py', '--cfg-path', '/var/folders/3w/7_wgs56n3c30fpsrg0g2mg_00000gn/T/tmpcefs8q0p']
+[2025-04-23T12:30:52.459+0100] {standard_task_runner.py:105} INFO - Job 11: Subtask run_kafka_producer
+[2025-04-23T12:30:52.474+0100] {task_command.py:467} INFO - Running <TaskInstance: kafka_spark_delta_pipeline.run_kafka_producer manual__2025-04-23T11:30:43.683886+00:00 [running]> on host mac.home
+[2025-04-23T12:30:52.554+0100] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='kafka_spark_delta_pipeline' AIRFLOW_CTX_TASK_ID='run_kafka_producer' AIRFLOW_CTX_EXECUTION_DATE='2025-04-23T11:30:43.683886+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-23T11:30:43.683886+00:00'
+[2025-04-23T12:30:52.554+0100] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-23T12:30:52.554+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-23T12:30:52.554+0100] {logging_mixin.py:190} INFO - Current task name:run_kafka_producer state:running start_date:2025-04-23 11:30:52.447239+00:00
+[2025-04-23T12:30:52.554+0100] {logging_mixin.py:190} INFO - Dag name:kafka_spark_delta_pipeline and current dag run status:running
+[2025-04-23T12:30:52.555+0100] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-23T12:30:52.556+0100] {conn.py:395} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2025-04-23T12:30:52.558+0100] {conn.py:614} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_recv> [IPv4 ('127.0.0.1', 9092)]>: Broker version identified as 2.6
+[2025-04-23T12:30:52.558+0100] {conn.py:456} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2025-04-23T12:35:52.565+0100] {conn.py:395} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2025-04-23T12:35:52.567+0100] {conn.py:456} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+[2025-04-23T12:35:52.567+0100] {conn.py:935} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+[2025-04-23T12:43:15.128+0100] {local_task_job_runner.py:346} WARNING - State of this instance has been externally set to queued. Terminating instance.
+[2025-04-23T12:43:15.129+0100] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-04-23T12:43:15.132+0100] {process_utils.py:132} INFO - Sending 15 to group 86443. PIDs of all processes in the group: [86443]
+[2025-04-23T12:43:15.132+0100] {process_utils.py:87} INFO - Sending the signal 15 to group 86443
+[2025-04-23T12:44:15.154+0100] {process_utils.py:150} WARNING - process psutil.Process(pid=86443, name='Python', status='running', started='12:30:52') did not respond to SIGTERM. Trying SIGKILL
+[2025-04-23T12:44:15.157+0100] {process_utils.py:87} INFO - Sending the signal 9 to group 86443
+[2025-04-23T12:44:15.171+0100] {process_utils.py:80} INFO - Process psutil.Process(pid=86443, name='Python', status='terminated', exitcode=<Negsignal.SIGKILL: -9>, started='12:30:52') (86443) terminated with exit code -9
+[2025-04-23T12:44:15.171+0100] {standard_task_runner.py:190} ERROR - ('Job 11 was killed before it finished (likely due to running out of memory)', 'For more information, see https://airflow.apache.org/docs/apache-airflow/stable/troubleshooting.html#LocalTaskJob-killed')

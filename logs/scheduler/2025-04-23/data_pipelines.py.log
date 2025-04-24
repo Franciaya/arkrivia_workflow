@@ -1,0 +1,589 @@
+[2025-04-23T03:40:44.237+0100] {processor.py:186} INFO - Started process (PID=63320) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:40:44.238+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T03:40:44.238+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:40:44.238+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:40:44.320+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:40:44.385+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:40:44.384+0100] {override.py:1930} INFO - Created Permission View: can read on DAG:kafka_spark_delta_pipeline
+[2025-04-23T03:40:44.387+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:40:44.387+0100] {override.py:1930} INFO - Created Permission View: can edit on DAG:kafka_spark_delta_pipeline
+[2025-04-23T03:40:44.411+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:40:44.411+0100] {override.py:1930} INFO - Created Permission View: can delete on DAG:kafka_spark_delta_pipeline
+[2025-04-23T03:40:44.413+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:40:44.413+0100] {override.py:1930} INFO - Created Permission View: can create on DAG Run:kafka_spark_delta_pipeline
+[2025-04-23T03:40:44.415+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:40:44.415+0100] {override.py:1930} INFO - Created Permission View: can read on DAG Run:kafka_spark_delta_pipeline
+[2025-04-23T03:40:44.416+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:40:44.416+0100] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:kafka_spark_delta_pipeline
+[2025-04-23T03:40:44.418+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:40:44.418+0100] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:kafka_spark_delta_pipeline
+[2025-04-23T03:40:44.418+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:40:44.418+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T03:40:44.421+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:40:44.421+0100] {dag.py:3262} INFO - Creating ORM DAG for kafka_spark_delta_pipeline
+[2025-04-23T03:40:44.423+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:40:44.423+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T03:40:44.428+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.193 seconds
+[2025-04-23T03:44:08.681+0100] {processor.py:186} INFO - Started process (PID=64235) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:44:08.682+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T03:44:08.683+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:44:08.683+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:44:08.764+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:44:08.795+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:44:08.795+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T03:44:08.800+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:44:08.800+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T03:44:08.805+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.125 seconds
+[2025-04-23T03:45:35.081+0100] {processor.py:186} INFO - Started process (PID=64423) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:45:35.082+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T03:45:35.083+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:45:35.083+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:45:35.179+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:45:35.210+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:45:35.210+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T03:45:35.215+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:45:35.215+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T03:45:35.220+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.140 seconds
+[2025-04-23T03:46:33.160+0100] {processor.py:186} INFO - Started process (PID=64547) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:46:33.161+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T03:46:33.162+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:46:33.162+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:46:33.256+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:46:33.286+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:46:33.286+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T03:46:33.292+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:46:33.292+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T03:46:33.298+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.140 seconds
+[2025-04-23T03:47:27.353+0100] {processor.py:186} INFO - Started process (PID=64669) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:47:27.355+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T03:47:27.356+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:47:27.356+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:47:27.433+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:47:27.462+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:47:27.462+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T03:47:27.467+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:47:27.467+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T03:47:27.472+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.120 seconds
+[2025-04-23T03:48:21.194+0100] {processor.py:186} INFO - Started process (PID=64791) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:48:21.195+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T03:48:21.196+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:48:21.196+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:48:21.290+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:48:21.322+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:48:21.322+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T03:48:21.327+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:48:21.327+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T03:48:21.334+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.141 seconds
+[2025-04-23T03:49:17.408+0100] {processor.py:186} INFO - Started process (PID=64915) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:49:17.409+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T03:49:17.410+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:49:17.410+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:49:17.464+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:49:17.495+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:49:17.494+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T03:49:17.499+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:49:17.499+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T03:49:17.505+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.098 seconds
+[2025-04-23T03:50:12.520+0100] {processor.py:186} INFO - Started process (PID=65035) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:50:12.522+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T03:50:12.523+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:50:12.523+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:50:12.616+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:50:12.651+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:50:12.650+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T03:50:12.656+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:50:12.656+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T03:50:12.662+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.142 seconds
+[2025-04-23T03:51:08.254+0100] {processor.py:186} INFO - Started process (PID=65157) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:51:08.256+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T03:51:08.256+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:51:08.256+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:51:08.329+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:51:08.359+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:51:08.359+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T03:51:08.364+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:51:08.364+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T03:51:08.370+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.117 seconds
+[2025-04-23T03:52:06.065+0100] {processor.py:186} INFO - Started process (PID=65288) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:52:06.066+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T03:52:06.067+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:52:06.067+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:52:06.147+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:52:06.178+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:52:06.178+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T03:52:06.183+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:52:06.183+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T03:52:06.188+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.124 seconds
+[2025-04-23T03:53:04.355+0100] {processor.py:186} INFO - Started process (PID=65414) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:53:04.356+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T03:53:04.357+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:53:04.357+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:53:04.440+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:53:04.471+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:53:04.471+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T03:53:04.476+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:53:04.476+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T03:53:04.482+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.129 seconds
+[2025-04-23T03:54:02.419+0100] {processor.py:186} INFO - Started process (PID=65543) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:54:02.421+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T03:54:02.421+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:54:02.421+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:54:02.509+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:54:02.540+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:54:02.540+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T03:54:02.545+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:54:02.545+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T03:54:02.551+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.133 seconds
+[2025-04-23T03:55:02.190+0100] {processor.py:186} INFO - Started process (PID=65673) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:55:02.191+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T03:55:02.192+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:55:02.192+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:55:02.285+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:55:02.319+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:55:02.318+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T03:55:02.324+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:55:02.324+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T03:55:02.330+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.141 seconds
+[2025-04-23T03:56:01.882+0100] {processor.py:186} INFO - Started process (PID=65796) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:56:01.883+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T03:56:01.883+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:56:01.883+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:56:01.973+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:56:02.007+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:56:02.007+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T03:56:02.012+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:56:02.012+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T03:56:02.018+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.137 seconds
+[2025-04-23T03:57:00.281+0100] {processor.py:186} INFO - Started process (PID=65924) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:57:00.282+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T03:57:00.282+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:57:00.282+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:57:00.373+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:57:00.405+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:57:00.404+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T03:57:00.410+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:57:00.409+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T03:57:00.415+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.136 seconds
+[2025-04-23T03:57:58.132+0100] {processor.py:186} INFO - Started process (PID=66052) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:57:58.133+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T03:57:58.133+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:57:58.133+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:57:58.230+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:57:58.266+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:57:58.265+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T03:57:58.271+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:57:58.271+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T03:57:58.277+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.147 seconds
+[2025-04-23T03:59:03.195+0100] {processor.py:186} INFO - Started process (PID=66158) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:59:03.196+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T03:59:03.196+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:59:03.196+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:59:03.290+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T03:59:03.325+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:59:03.325+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T03:59:03.331+0100] {logging_mixin.py:190} INFO - [2025-04-23T03:59:03.331+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T03:59:03.337+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.144 seconds
+[2025-04-23T04:00:11.094+0100] {processor.py:186} INFO - Started process (PID=66269) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:00:11.095+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:00:11.095+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:00:11.095+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:00:11.186+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:00:11.219+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:00:11.219+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:00:11.224+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:00:11.224+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:00:11.229+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.136 seconds
+[2025-04-23T04:01:11.156+0100] {processor.py:186} INFO - Started process (PID=66380) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:01:11.157+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:01:11.158+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:01:11.158+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:01:11.246+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:01:11.276+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:01:11.276+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:01:11.281+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:01:11.281+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:01:11.286+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.131 seconds
+[2025-04-23T04:02:06.691+0100] {processor.py:186} INFO - Started process (PID=66480) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:02:06.692+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:02:06.692+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:02:06.692+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:02:06.765+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:02:06.797+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:02:06.796+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:02:06.802+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:02:06.801+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:02:06.807+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.117 seconds
+[2025-04-23T04:03:00.771+0100] {processor.py:186} INFO - Started process (PID=66579) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:03:00.772+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:03:00.772+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:03:00.772+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:03:00.863+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:03:00.894+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:03:00.894+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:03:00.899+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:03:00.899+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:03:00.904+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.135 seconds
+[2025-04-23T04:03:59.119+0100] {processor.py:186} INFO - Started process (PID=66719) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:03:59.120+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:03:59.120+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:03:59.120+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:03:59.210+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:03:59.240+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:03:59.240+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:03:59.245+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:03:59.245+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:03:59.250+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.132 seconds
+[2025-04-23T04:04:57.910+0100] {processor.py:186} INFO - Started process (PID=66837) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:04:57.911+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:04:57.912+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:04:57.911+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:04:58.017+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:04:58.053+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:04:58.052+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:04:58.059+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:04:58.059+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:04:58.065+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.156 seconds
+[2025-04-23T04:06:02.063+0100] {processor.py:186} INFO - Started process (PID=66942) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:06:02.064+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:06:02.064+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:06:02.064+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:06:02.136+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:06:02.167+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:06:02.167+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:06:02.172+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:06:02.172+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:06:02.177+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.116 seconds
+[2025-04-23T04:06:54.477+0100] {processor.py:186} INFO - Started process (PID=67057) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:06:54.478+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:06:54.478+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:06:54.478+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:06:54.576+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:06:54.608+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:06:54.608+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:06:54.613+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:06:54.613+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:06:54.618+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.141 seconds
+[2025-04-23T04:18:15.037+0100] {processor.py:186} INFO - Started process (PID=68881) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:18:15.038+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:18:15.039+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:18:15.039+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:18:15.120+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:18:15.151+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:18:15.151+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:18:15.157+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:18:15.157+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:18:15.165+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.129 seconds
+[2025-04-23T04:19:40.254+0100] {processor.py:186} INFO - Started process (PID=69033) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:19:40.255+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:19:40.255+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:19:40.255+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:19:40.337+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:19:40.367+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:19:40.366+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:19:40.371+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:19:40.371+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:19:40.376+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.124 seconds
+[2025-04-23T04:20:56.520+0100] {processor.py:186} INFO - Started process (PID=69449) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:20:56.521+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:20:56.522+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:20:56.522+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:20:56.596+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:20:56.628+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:20:56.628+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:20:56.633+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:20:56.633+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:20:56.638+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.120 seconds
+[2025-04-23T04:22:24.121+0100] {processor.py:186} INFO - Started process (PID=69626) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:22:24.122+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:22:24.123+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:22:24.123+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:22:24.220+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:22:24.251+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:22:24.251+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:22:24.256+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:22:24.256+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:22:24.261+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.140 seconds
+[2025-04-23T04:23:21.160+0100] {processor.py:186} INFO - Started process (PID=69765) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:23:21.161+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:23:21.162+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:23:21.162+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:23:21.242+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:23:21.272+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:23:21.272+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:23:21.277+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:23:21.277+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:23:21.282+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.124 seconds
+[2025-04-23T04:24:19.693+0100] {processor.py:186} INFO - Started process (PID=70029) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:24:19.695+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:24:19.695+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:24:19.695+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:24:19.784+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:24:19.815+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:24:19.814+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:24:19.819+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:24:19.819+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:24:19.825+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.133 seconds
+[2025-04-23T04:25:22.748+0100] {processor.py:186} INFO - Started process (PID=70450) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:25:22.749+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:25:22.750+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:25:22.750+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:25:22.830+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:25:22.862+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:25:22.861+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:25:22.867+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:25:22.867+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:25:22.872+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.125 seconds
+[2025-04-23T04:27:47.794+0100] {processor.py:186} INFO - Started process (PID=71212) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:27:47.796+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:27:47.796+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:27:47.796+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:27:47.886+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:27:47.918+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:27:47.918+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:27:47.923+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:27:47.923+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:27:47.928+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.135 seconds
+[2025-04-23T04:29:13.405+0100] {processor.py:186} INFO - Started process (PID=71363) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:29:13.406+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:29:13.407+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:29:13.407+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:29:13.509+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:29:13.541+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:29:13.541+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:29:13.546+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:29:13.546+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:29:13.552+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.148 seconds
+[2025-04-23T04:30:10.326+0100] {processor.py:186} INFO - Started process (PID=71552) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:30:10.327+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:30:10.328+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:30:10.328+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:30:10.410+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:30:10.442+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:30:10.442+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:30:10.447+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:30:10.447+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:30:10.453+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.128 seconds
+[2025-04-23T04:31:07.503+0100] {processor.py:186} INFO - Started process (PID=71680) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:31:07.505+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:31:07.505+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:31:07.505+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:31:07.594+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:31:07.625+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:31:07.625+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:31:07.630+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:31:07.630+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:31:07.635+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.134 seconds
+[2025-04-23T04:32:03.133+0100] {processor.py:186} INFO - Started process (PID=71802) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:32:03.135+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:32:03.135+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:32:03.135+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:32:03.216+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:32:03.247+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:32:03.247+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:32:03.252+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:32:03.252+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:32:03.257+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.126 seconds
+[2025-04-23T04:33:54.885+0100] {processor.py:186} INFO - Started process (PID=71956) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:33:54.887+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:33:54.887+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:33:54.887+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:33:54.975+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:33:55.005+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:33:55.004+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:33:55.009+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:33:55.009+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:33:55.015+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.131 seconds
+[2025-04-23T04:35:03.004+0100] {processor.py:186} INFO - Started process (PID=72109) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:35:03.005+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:35:03.005+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:35:03.005+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:35:03.104+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:35:03.136+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:35:03.136+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:35:03.141+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:35:03.141+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:35:03.146+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.144 seconds
+[2025-04-23T04:35:58.531+0100] {processor.py:186} INFO - Started process (PID=72231) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:35:58.532+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:35:58.533+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:35:58.533+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:35:58.616+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:35:58.648+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:35:58.648+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:35:58.653+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:35:58.653+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:35:58.658+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.128 seconds
+[2025-04-23T04:36:55.000+0100] {processor.py:186} INFO - Started process (PID=72357) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:36:55.002+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:36:55.003+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:36:55.003+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:36:55.075+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:36:55.106+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:36:55.106+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:36:55.111+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:36:55.111+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:36:55.116+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.117 seconds
+[2025-04-23T04:37:50.506+0100] {processor.py:186} INFO - Started process (PID=72477) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:37:50.508+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:37:50.509+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:37:50.508+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:37:50.591+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:37:50.623+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:37:50.623+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:37:50.628+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:37:50.628+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:37:50.633+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.129 seconds
+[2025-04-23T04:38:47.542+0100] {processor.py:186} INFO - Started process (PID=72579) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:38:47.544+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:38:47.545+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:38:47.545+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:38:47.633+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:38:47.664+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:38:47.664+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:38:47.669+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:38:47.669+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:38:47.674+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.133 seconds
+[2025-04-23T04:39:42.372+0100] {processor.py:186} INFO - Started process (PID=72657) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:39:42.373+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:39:42.374+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:39:42.374+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:39:42.456+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:39:42.486+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:39:42.486+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:39:42.491+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:39:42.490+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:39:42.496+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.125 seconds
+[2025-04-23T04:40:35.936+0100] {processor.py:186} INFO - Started process (PID=72736) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:40:35.937+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:40:35.938+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:40:35.938+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:40:36.017+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:40:36.047+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:40:36.047+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:40:36.052+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:40:36.051+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:40:36.057+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.122 seconds
+[2025-04-23T04:41:29.816+0100] {processor.py:186} INFO - Started process (PID=72816) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:41:29.817+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:41:29.818+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:41:29.818+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:41:29.899+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:41:29.928+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:41:29.928+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:41:29.933+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:41:29.933+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:41:29.938+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.123 seconds
+[2025-04-23T04:42:22.619+0100] {processor.py:186} INFO - Started process (PID=72892) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:42:22.621+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:42:22.621+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:42:22.621+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:42:22.700+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:42:22.730+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:42:22.729+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:42:22.734+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:42:22.734+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:42:22.739+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.121 seconds
+[2025-04-23T04:43:16.148+0100] {processor.py:186} INFO - Started process (PID=72967) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:43:16.149+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:43:16.150+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:43:16.150+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:43:16.220+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:43:16.250+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:43:16.249+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:43:16.254+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:43:16.254+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:43:16.259+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.113 seconds
+[2025-04-23T04:44:08.426+0100] {processor.py:186} INFO - Started process (PID=73069) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:44:08.428+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:44:08.429+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:44:08.429+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:44:08.509+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:44:08.539+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:44:08.539+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:44:08.544+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:44:08.543+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:44:08.549+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.124 seconds
+[2025-04-23T04:45:00.416+0100] {processor.py:186} INFO - Started process (PID=73145) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:45:00.416+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:45:00.417+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:45:00.417+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:45:00.471+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:45:00.501+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:45:00.501+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:45:00.506+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:45:00.506+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:45:00.511+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.097 seconds
+[2025-04-23T04:45:52.375+0100] {processor.py:186} INFO - Started process (PID=73244) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:45:52.377+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:45:52.378+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:45:52.378+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:45:52.459+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:45:52.488+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:45:52.488+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:45:52.493+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:45:52.493+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:45:52.498+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.124 seconds
+[2025-04-23T04:46:45.983+0100] {processor.py:186} INFO - Started process (PID=73322) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:46:45.984+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:46:45.984+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:46:45.984+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:46:46.067+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:46:46.098+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:46:46.098+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:46:46.103+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:46:46.103+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:46:46.108+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.127 seconds
+[2025-04-23T04:47:40.201+0100] {processor.py:186} INFO - Started process (PID=73399) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:47:40.203+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:47:40.203+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:47:40.203+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:47:40.281+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:47:40.312+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:47:40.312+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:47:40.317+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:47:40.317+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:47:40.322+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.123 seconds
+[2025-04-23T04:48:36.664+0100] {processor.py:186} INFO - Started process (PID=73477) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:48:36.665+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:48:36.666+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:48:36.666+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:48:36.755+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:48:36.785+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:48:36.785+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:48:36.790+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:48:36.790+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:48:36.795+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.133 seconds
+[2025-04-23T04:49:32.756+0100] {processor.py:186} INFO - Started process (PID=73558) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:49:32.758+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:49:32.759+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:49:32.758+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:49:32.838+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:49:32.867+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:49:32.867+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:49:32.872+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:49:32.872+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:49:32.877+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.122 seconds
+[2025-04-23T04:50:26.880+0100] {processor.py:186} INFO - Started process (PID=73636) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:50:26.881+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:50:26.882+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:50:26.882+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:50:26.937+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:50:26.968+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:50:26.967+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:50:26.972+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:50:26.972+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:50:26.978+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.098 seconds
+[2025-04-23T04:51:19.679+0100] {processor.py:186} INFO - Started process (PID=73722) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:51:19.680+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:51:19.681+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:51:19.681+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:51:19.777+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:51:19.807+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:51:19.807+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:51:19.812+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:51:19.812+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:51:19.817+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.139 seconds
+[2025-04-23T04:52:18.352+0100] {processor.py:186} INFO - Started process (PID=73814) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:52:18.353+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:52:18.354+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:52:18.354+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:52:18.445+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:52:18.476+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:52:18.476+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:52:18.481+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:52:18.481+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:52:18.487+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.136 seconds
+[2025-04-23T04:53:17.860+0100] {processor.py:186} INFO - Started process (PID=73981) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:53:17.861+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:53:17.863+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:53:17.862+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:53:17.977+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:53:18.026+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:53:18.026+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:53:18.032+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:53:18.032+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:53:18.040+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.181 seconds
+[2025-04-23T04:54:17.372+0100] {processor.py:186} INFO - Started process (PID=74111) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:54:17.373+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:54:17.374+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:54:17.374+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:54:17.430+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:54:17.461+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:54:17.461+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:54:17.466+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:54:17.466+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:54:17.471+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.100 seconds
+[2025-04-23T04:55:13.573+0100] {processor.py:186} INFO - Started process (PID=74237) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:55:13.574+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:55:13.574+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:55:13.574+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:55:13.630+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:55:13.661+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:55:13.661+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:55:13.666+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:55:13.665+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:55:13.671+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.099 seconds
+[2025-04-23T04:56:11.156+0100] {processor.py:186} INFO - Started process (PID=74359) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:56:11.157+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:56:11.158+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:56:11.158+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:56:11.213+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:56:11.243+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:56:11.243+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:56:11.248+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:56:11.248+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:56:11.253+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.098 seconds
+[2025-04-23T04:57:06.992+0100] {processor.py:186} INFO - Started process (PID=74551) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:57:06.993+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:57:06.994+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:57:06.994+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:57:07.049+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:57:07.083+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:57:07.083+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:57:07.088+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:57:07.088+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:57:07.093+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.102 seconds
+[2025-04-23T04:58:03.373+0100] {processor.py:186} INFO - Started process (PID=74674) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:58:03.374+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:58:03.375+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:58:03.374+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:58:03.466+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:58:03.499+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:58:03.498+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:58:03.504+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:58:03.504+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:58:03.509+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.138 seconds
+[2025-04-23T04:58:56.047+0100] {processor.py:186} INFO - Started process (PID=74794) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:58:56.049+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:58:56.050+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:58:56.050+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:58:56.130+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:58:56.160+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:58:56.160+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:58:56.165+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:58:56.165+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:58:56.170+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.124 seconds
+[2025-04-23T04:59:50.739+0100] {processor.py:186} INFO - Started process (PID=74916) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:59:50.740+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T04:59:50.740+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:59:50.740+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:59:50.813+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T04:59:50.845+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:59:50.844+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T04:59:50.850+0100] {logging_mixin.py:190} INFO - [2025-04-23T04:59:50.850+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T04:59:50.855+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.117 seconds
+[2025-04-23T05:00:44.483+0100] {processor.py:186} INFO - Started process (PID=75036) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:00:44.484+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T05:00:44.485+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:00:44.485+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:00:44.565+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:00:44.597+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:00:44.597+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T05:00:44.602+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:00:44.602+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T05:00:44.607+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.126 seconds
+[2025-04-23T05:01:39.891+0100] {processor.py:186} INFO - Started process (PID=75155) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:01:39.892+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T05:01:39.893+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:01:39.893+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:01:39.985+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:01:40.017+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:01:40.017+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T05:01:40.022+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:01:40.022+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T05:01:40.027+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.137 seconds
+[2025-04-23T05:02:34.557+0100] {processor.py:186} INFO - Started process (PID=75277) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:02:34.558+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T05:02:34.559+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:02:34.559+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:02:34.615+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:02:34.646+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:02:34.646+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T05:02:34.651+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:02:34.651+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T05:02:34.656+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.100 seconds
+[2025-04-23T05:03:32.019+0100] {processor.py:186} INFO - Started process (PID=75401) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:03:32.020+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T05:03:32.021+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:03:32.021+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:03:32.094+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:03:32.124+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:03:32.124+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T05:03:32.129+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:03:32.129+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T05:03:32.134+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.116 seconds
+[2025-04-23T05:04:28.592+0100] {processor.py:186} INFO - Started process (PID=75530) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:04:28.593+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T05:04:28.594+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:04:28.594+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:04:28.649+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:04:28.680+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:04:28.680+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T05:04:28.685+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:04:28.685+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T05:04:28.691+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.100 seconds
+[2025-04-23T05:05:22.293+0100] {processor.py:186} INFO - Started process (PID=75651) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:05:22.294+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T05:05:22.295+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:05:22.295+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:05:22.350+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:05:22.380+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:05:22.380+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T05:05:22.385+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:05:22.385+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T05:05:22.390+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.099 seconds
+[2025-04-23T05:06:16.455+0100] {processor.py:186} INFO - Started process (PID=75775) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:06:16.457+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T05:06:16.458+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:06:16.457+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:06:16.537+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:06:16.568+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:06:16.568+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T05:06:16.573+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:06:16.573+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T05:06:16.578+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.124 seconds
+[2025-04-23T05:07:10.970+0100] {processor.py:186} INFO - Started process (PID=75893) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:07:10.972+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T05:07:10.973+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:07:10.973+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:07:11.095+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:07:11.134+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:07:11.133+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T05:07:11.140+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:07:11.140+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T05:07:11.147+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.178 seconds
+[2025-04-23T05:08:09.074+0100] {processor.py:186} INFO - Started process (PID=76070) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:08:09.076+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T05:08:09.077+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:08:09.077+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:08:09.163+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:08:09.195+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:08:09.195+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T05:08:09.200+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:08:09.200+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T05:08:09.206+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.133 seconds
+[2025-04-23T05:09:05.718+0100] {processor.py:186} INFO - Started process (PID=76346) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:09:05.719+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T05:09:05.720+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:09:05.720+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:09:05.795+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:09:05.826+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:09:05.826+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T05:09:05.831+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:09:05.831+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T05:09:05.836+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.119 seconds
+[2025-04-23T05:18:15.869+0100] {processor.py:186} INFO - Started process (PID=77256) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:18:15.870+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T05:18:15.871+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:18:15.871+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:18:15.958+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:18:15.989+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:18:15.989+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T05:18:15.994+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:18:15.994+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T05:18:16.000+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.131 seconds
+[2025-04-23T05:19:43.875+0100] {processor.py:186} INFO - Started process (PID=77431) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:19:43.876+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T05:19:43.877+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:19:43.877+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:19:43.967+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:19:43.998+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:19:43.998+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T05:19:44.003+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:19:44.003+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T05:19:44.008+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.134 seconds
+[2025-04-23T05:20:42.492+0100] {processor.py:186} INFO - Started process (PID=77530) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:20:42.493+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T05:20:42.494+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:20:42.494+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:20:42.578+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T05:20:42.616+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:20:42.616+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T05:20:42.623+0100] {logging_mixin.py:190} INFO - [2025-04-23T05:20:42.622+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T05:20:42.630+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.139 seconds
+[2025-04-23T12:29:45.433+0100] {processor.py:186} INFO - Started process (PID=86299) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T12:29:45.435+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T12:29:45.436+0100] {logging_mixin.py:190} INFO - [2025-04-23T12:29:45.436+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T12:29:45.525+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T12:29:45.559+0100] {logging_mixin.py:190} INFO - [2025-04-23T12:29:45.559+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T12:29:45.564+0100] {logging_mixin.py:190} INFO - [2025-04-23T12:29:45.564+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to None, run_after=None
+[2025-04-23T12:29:45.570+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.137 seconds
+[2025-04-23T12:30:51.125+0100] {processor.py:186} INFO - Started process (PID=86439) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T12:30:51.126+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T12:30:51.127+0100] {logging_mixin.py:190} INFO - [2025-04-23T12:30:51.127+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T12:30:51.217+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T12:30:51.251+0100] {logging_mixin.py:190} INFO - [2025-04-23T12:30:51.251+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T12:30:51.257+0100] {logging_mixin.py:190} INFO - [2025-04-23T12:30:51.257+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to None, run_after=None
+[2025-04-23T12:30:51.266+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.142 seconds
+[2025-04-23T12:43:06.515+0100] {processor.py:186} INFO - Started process (PID=87042) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T12:43:06.516+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T12:43:06.517+0100] {logging_mixin.py:190} INFO - [2025-04-23T12:43:06.517+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T12:43:06.598+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T12:43:06.633+0100] {logging_mixin.py:190} INFO - [2025-04-23T12:43:06.633+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T12:43:06.639+0100] {logging_mixin.py:190} INFO - [2025-04-23T12:43:06.639+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to None, run_after=None
+[2025-04-23T12:43:06.644+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.130 seconds
+[2025-04-23T12:44:16.648+0100] {processor.py:186} INFO - Started process (PID=87197) to work on /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T12:44:16.649+0100] {processor.py:914} INFO - Processing file /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py for tasks to queue
+[2025-04-23T12:44:16.650+0100] {logging_mixin.py:190} INFO - [2025-04-23T12:44:16.650+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T12:44:16.747+0100] {processor.py:925} INFO - DAG(s) 'kafka_spark_delta_pipeline' retrieved from /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py
+[2025-04-23T12:44:16.782+0100] {logging_mixin.py:190} INFO - [2025-04-23T12:44:16.781+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T12:44:16.787+0100] {logging_mixin.py:190} INFO - [2025-04-23T12:44:16.787+0100] {dag.py:4180} INFO - Setting next_dagrun for kafka_spark_delta_pipeline to None, run_after=None
+[2025-04-23T12:44:16.793+0100] {processor.py:208} INFO - Processing /Users/francisayanbadejo/Documents/akrivia_assessment/dags/data_pipelines.py took 0.146 seconds
