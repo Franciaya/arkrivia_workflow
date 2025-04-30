@@ -1,8 +1,12 @@
 import json
 import pytest
+import os
+from dotenv import load_dotenv
 from pyspark.sql import Row, SparkSession
 from spark_process import spark_transform
 
+load_dotenv(override=True)
+test_config = os.getenv("TEST_CONFIG")
 
 @pytest.fixture(scope="session")
 def spark():

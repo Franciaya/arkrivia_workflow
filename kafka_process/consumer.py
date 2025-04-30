@@ -1,6 +1,7 @@
 import json
 import pyspark
 import os
+from dotenv import load_dotenv
 from delta import configure_spark_with_delta_pip
 from pyspark.sql.functions import col, from_json
 from pyspark.sql.types import StructType, StructField, IntegerType, StringType
@@ -9,7 +10,6 @@ from spark_process.spark_transform import (
     ReplaceTransform,
     RemovePostcodeSectionTransform,
 )
-from dotenv import load_dotenv
 
 load_dotenv(override=True)
 

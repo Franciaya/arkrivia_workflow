@@ -10,12 +10,12 @@ from spark_process.spark_transform import (
 )
 
 load_dotenv(override=True)
-test_config = os.getenv("TEST_CONFIG")
+tests_data = os.getenv("TESTS_DATA")
 
 # Load test data dynamically from the JSON file
 @pytest.fixture
 def test_data():
-    with open(test_config, "r") as json_file:
+    with open(tests_data, "r") as json_file:
         return json.load(json_file)
 
 
