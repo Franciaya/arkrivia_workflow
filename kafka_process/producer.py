@@ -1,9 +1,13 @@
 import json
 import os
 from kafka import KafkaProducer
+from dotenv import load_dotenv
+
+load_dotenv(override=True)
+kafka_config_file = os.getenv('KAFKA_CONFIG_FILE')
 
 # Load Kafka config
-with open("config/kafka_config.json") as data_file:
+with open(kafka_config_file) as data_file:
     kafka_config = json.load(data_file)
 
 KAFKA_BROKER = kafka_config.get("broker")

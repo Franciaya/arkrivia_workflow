@@ -1,21 +1,27 @@
 import json
 import pyspark
 import os
-# from delta import *
-from dotenv import load_dotenv
-from delta import configure_spark_with_delta_pip
-from pyspark.sql.functions import col, from_json
-from pyspark.sql.types import StructType, StructField, IntegerType, StringType
+import sys
 from spark_process.spark_transform import (
     RegionTransform,
     ReplaceTransform,
     RemovePostcodeSectionTransform,
 )
+from dotenv import load_dotenv
+load_dotenv(override=True)
 
-
-load_dotenv()
-
+base_dir = os.getenv('AIRFLOW_HOME')
 spark_packages = os.getenv("SPARK_PACKAGES")
+kafka_config_file = os.getenv('KAFKA_CONFIG_FILE')
+schema_config_file = os.getenv('SCHEMA_CONFIG_FILE')
+databricks_config_file = os.getenv('DATABRICKS_CONFIG_FILE')
+delta_table_path = os.getenv('DELTA_TABLE_PATH')
+checkpoints_path = os.getenv('CHECKPOINTS_PATH')
+spark_config = os.getenv('SPARK_CONFIG')
+
+from delta import configure_spark_with_delta_pip
+from pyspark.sql.functions import col, from_json
+from pyspark.sql.types import StructType, StructField, IntegerType, StringType
 
 
 def create_spark_session():
@@ -27,6 +33,7 @@ def create_spark_session():
             "spark.sql.catalog.spark_catalog",
             "org.apache.spark.sql.delta.catalog.DeltaCatalog",
         )
+        .config("spark.hadoop.orc.overwrite.output.file", "true") 
     )
 
     spark = configure_spark_with_delta_pip(
@@ -37,14 +44,16 @@ def create_spark_session():
     return spark
 
 
-def load_kafka_config(config_path="config/kafka_config.json"):
+def load_kafka_config(config_path=kafka_config_file):
+    config_path = os.path.join(base_dir, config_path)
     with open(config_path, "r") as config_file:
         return json.load(config_file)
 
 
-def load_schema_from_config(config_path="config/schema_config.json"):
-    with open(config_path, "r") as f:
-        config = json.load(f)
+def load_schema_from_config(config_path=schema_config_file):
+    config_path = os.path.join(base_dir, config_path)
+    with open(config_path, "r") as config_file:
+        config = json.load(config_file)
 
     fields = []
     for field in config["fields"]:
@@ -76,7 +85,7 @@ def read_kafka_stream(spark, kafka_config):
     )
 
 
-def parse_kafka_messages(spark, df_data, schema):  # Pass the schema to this function
+def parse_kafka_messages(spark, df_data, schema):
 
     df_data = (
         df_data.selectExpr("CAST(value AS STRING) as json_data")
@@ -87,8 +96,9 @@ def parse_kafka_messages(spark, df_data, schema):  # Pass the schema to this fun
 
     return df_data
 
-
-def load_transforms(config_path="config/spark_config.json"):
+# Load spark config and transform the data
+def load_transforms(config_path=spark_config):
+    config_path = os.path.join(base_dir, config_path)
     with open(config_path) as data_file:
         config = json.load(data_file)
 
@@ -111,22 +121,24 @@ def apply_transformations(df_data, transforms):
     return df_data
 
 
-def load_databricks_config(path="config/databricks_config.json"):
-    with open(path, "r") as file:
-        return json.load(file)
+def load_databricks_config(config_path=databricks_config_file):
+    with open(config_path, "r") as config_obj:
+        return json.load(config_obj)
 
 
-def write_to_delta(
-    df_data, target="local", config_path="config/databricks_config.json"
-):
-
+def write_to_delta(df_data, target="local"):
+   
     if target == "local":
-        output_path = "data/delta/patients_transformed"
-        checkpoint_path = "data/checkpoints"
+        output_path = os.path.join(base_dir, delta_table_path)  # e.g., data/delta/patients_transformed
+        checkpoint_path = os.path.join(base_dir, checkpoints_path)  # e.g., data/checkpoints
+
+    # Load Databricks config only if needed
     elif target == "databricks":
-        databricks_config = load_databricks_config(config_path)
+        databricks_config_path = os.path.join(base_dir, databricks_config_file)
+        databricks_config = load_databricks_config(databricks_config_path)
         output_path = databricks_config["dbfs_path"]
         checkpoint_path = output_path + "_checkpoints"
+
     else:
         raise ValueError("Invalid target specified. Use 'local' or 'databricks'.")
 
@@ -135,11 +147,11 @@ def write_to_delta(
     ).start(output_path)
 
 
-def main():
+def process():
 
     spark = create_spark_session()
     kafka_config = load_kafka_config()
-    schema = load_schema_from_config("config/schema_config.json")
+    schema = load_schema_from_config()
 
     df_data = read_kafka_stream(spark, kafka_config)
     df_data = parse_kafka_messages(spark, df_data, schema)
@@ -155,4 +167,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    process()

@@ -9,7 +9,7 @@ API_URL = "https://api.postcodes.io/random/postcodes"
 
 
 def get_random_city_postcode():
-    """Fetch a random city and postcode from an API, ensuring it's in England or Wales."""
+    # Fetch a random city and postcode from an API, ensuring it's in England or Wales.
     while True:
         response = requests.get(API_URL)
         if response.status_code == 200:
@@ -21,11 +21,12 @@ def get_random_city_postcode():
 
 
 def generate_patient_data(n=1000):
-    """Generate fake patient data for patients in England and Wales only."""
+    # Generate fake patient data for patients in England and Wales only.
     patients = []
     diseases = ["Depression", "Schizophrenia", "Cancer", "Diabetes", "Hypertension"]
 
-    for patient_id in range(1, n + 1):  # Generate sequential integer IDs
+    # Generate sequential integer IDs
+    for patient_id in range(1, n + 1):  
         city, postcode = get_random_city_postcode()
         patient = {
             "PatientId": patient_id,  # Use integer IDs
