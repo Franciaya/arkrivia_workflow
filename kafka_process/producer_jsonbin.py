@@ -8,10 +8,7 @@ load_dotenv(override=True)
 base_dir = os.getenv('AIRFLOW_HOME')
 kafka_config_file = os.getenv('KAFKA_CONFIG_FILE')
 
-# sys.path.insert(0, base_dir)
-# sys.path.insert(0, os.path.join(base_dir, 'ingestion_jsonio_api'))
 from ingestion_jsonio_api.ingestion_api import get_jsonbin_api
-
 
 # Load Kafka config
 config_path = os.path.join(base_dir, kafka_config_file)

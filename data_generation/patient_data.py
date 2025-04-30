@@ -38,7 +38,7 @@ def generate_patient_data(n=1000):
         # while len(patients) < n:
         #     city, postcode = get_random_city_postcode()
         #     patient = {
-        #         "PatientId": str(fake.uuid4()),  # Ensure UUID is string
+        #         "PatientId": str(fake.uuid4()),  # Ensures UUID is string
         #         "PatientName": fake.name(),
         #         "City": city,
         #         "PostCode": postcode,

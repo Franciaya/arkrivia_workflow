@@ -11,9 +11,7 @@ class Transform:
         raise NotImplementedError("Subclasses should implement this method.")
 
 
-# Concrete Transformation Classes
-
-
+# Concrete Transformation Classes to create region column
 class RegionTransform(Transform):
     def modify_or_create(self, df_data):
         mapping = self.config["mapping"]
@@ -29,12 +27,12 @@ class RegionTransform(Transform):
             .otherwise(fs.lit("South England & Wales")),
         )
 
-
+# Concrete Transformation Classes to modify/mask patient name
 class ReplaceTransform(Transform):
     def modify_or_create(self, df_data):
         return df_data.withColumn("PatientName", fs.lit(self.config["new_value"]))
 
-
+# Concrete Transformation Classes to remove postcode section
 class RemovePostcodeSectionTransform(Transform):
     def modify_or_create(self, df_data):
         # Find the position of the first space in PostCode
