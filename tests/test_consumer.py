@@ -1,21 +1,16 @@
 import json
 import pytest
-import os
 from pyspark.sql import SparkSession
-from dotenv import load_dotenv
 from spark_process.spark_transform import (
     RegionTransform,
     ReplaceTransform,
     RemovePostcodeSectionTransform,
 )
 
-load_dotenv(override=True)
-tests_data = os.getenv("TESTS_DATA")
-
 # Load test data dynamically from the JSON file
 @pytest.fixture
 def test_data():
-    with open(tests_data, "r") as json_file:
+    with open("tests/config/test_data.json", "r") as json_file:
         return json.load(json_file)
 
 

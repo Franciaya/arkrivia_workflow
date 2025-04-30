@@ -1,19 +1,13 @@
 import json
 import pytest
-import os
 from unittest.mock import patch, MagicMock
-from dotenv import load_dotenv
 from kafka_process.producer import (
     load_patient_data,
     send_patient_data,
 ) 
 
-load_dotenv(override=True)
-
-kafka_test_config = os.getenv("KAFKA_TEST_CONFIG")
-
 # Load Kafka config and test data from actual files for the test
-with open(kafka_test_config , "r") as data_file:
+with open("tests/config/test_kafka_config.json" , "r") as data_file:
     kafka_config = json.load(data_file)
 
 KAFKA_BROKER = kafka_config.get("broker")

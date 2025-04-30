@@ -1,12 +1,8 @@
 import json
 import pytest
-import os
-from dotenv import load_dotenv
 from pyspark.sql import Row, SparkSession
 from spark_process import spark_transform
 
-load_dotenv(override=True)
-test_config = os.getenv("TEST_CONFIG")
 
 @pytest.fixture(scope="session")
 def spark():
@@ -19,7 +15,7 @@ def spark():
 
 @pytest.fixture
 def test_df(spark):
-    with open("tests/test_data.json", "r") as data_file:
+    with open("tests/config/test_data.json", "r") as data_file:
         data = json.load(data_file)
         return spark.createDataFrame([Row(**record) for record in data])
 

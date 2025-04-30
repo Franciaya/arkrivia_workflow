@@ -1,5 +1,5 @@
 {
     "broker": "localhost:9092",
     "topic": "patient_topic",
-    "data_file": "tests/test_data.json"
+    "data_file": "tests/config/test_data.json"
 }
