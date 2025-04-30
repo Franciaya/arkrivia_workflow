@@ -26,7 +26,7 @@ def generate_patient_data(n=1000):
     diseases = ["Depression", "Schizophrenia", "Cancer", "Diabetes", "Hypertension"]
 
     # Generate sequential integer IDs
-    for patient_id in range(1, n + 1):  
+    for patient_id in range(1, n + 1):
         city, postcode = get_random_city_postcode()
         patient = {
             "PatientId": patient_id,  # Use integer IDs

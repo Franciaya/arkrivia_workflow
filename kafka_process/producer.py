@@ -4,7 +4,7 @@ from kafka import KafkaProducer
 from dotenv import load_dotenv
 
 load_dotenv(override=True)
-kafka_config_file = os.getenv('KAFKA_CONFIG_FILE')
+kafka_config_file = os.getenv("KAFKA_CONFIG_FILE")
 
 # Load Kafka config
 with open(kafka_config_file) as data_file:

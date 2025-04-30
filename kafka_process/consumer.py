@@ -1,27 +1,26 @@
 import json
 import pyspark
 import os
-import sys
+from delta import configure_spark_with_delta_pip
+from pyspark.sql.functions import col, from_json
+from pyspark.sql.types import StructType, StructField, IntegerType, StringType
 from spark_process.spark_transform import (
     RegionTransform,
     ReplaceTransform,
     RemovePostcodeSectionTransform,
 )
 from dotenv import load_dotenv
+
 load_dotenv(override=True)
 
-base_dir = os.getenv('AIRFLOW_HOME')
+base_dir = os.getenv("AIRFLOW_HOME")
 spark_packages = os.getenv("SPARK_PACKAGES")
-kafka_config_file = os.getenv('KAFKA_CONFIG_FILE')
-schema_config_file = os.getenv('SCHEMA_CONFIG_FILE')
-databricks_config_file = os.getenv('DATABRICKS_CONFIG_FILE')
-delta_table_path = os.getenv('DELTA_TABLE_PATH')
-checkpoints_path = os.getenv('CHECKPOINTS_PATH')
-spark_config = os.getenv('SPARK_CONFIG')
-
-from delta import configure_spark_with_delta_pip
-from pyspark.sql.functions import col, from_json
-from pyspark.sql.types import StructType, StructField, IntegerType, StringType
+kafka_config_file = os.getenv("KAFKA_CONFIG_FILE")
+schema_config_file = os.getenv("SCHEMA_CONFIG_FILE")
+databricks_config_file = os.getenv("DATABRICKS_CONFIG_FILE")
+delta_table_path = os.getenv("DELTA_TABLE_PATH")
+checkpoints_path = os.getenv("CHECKPOINTS_PATH")
+spark_config = os.getenv("SPARK_CONFIG")
 
 
 def create_spark_session():
@@ -33,7 +32,7 @@ def create_spark_session():
             "spark.sql.catalog.spark_catalog",
             "org.apache.spark.sql.delta.catalog.DeltaCatalog",
         )
-        .config("spark.hadoop.orc.overwrite.output.file", "true") 
+        .config("spark.hadoop.orc.overwrite.output.file", "true")
     )
 
     spark = configure_spark_with_delta_pip(
@@ -96,6 +95,7 @@ def parse_kafka_messages(spark, df_data, schema):
 
     return df_data
 
+
 # Load spark config and transform the data
 def load_transforms(config_path=spark_config):
     config_path = os.path.join(base_dir, config_path)
@@ -127,10 +127,14 @@ def load_databricks_config(config_path=databricks_config_file):
 
 
 def write_to_delta(df_data, target="local"):
-   
+
     if target == "local":
-        output_path = os.path.join(base_dir, delta_table_path)  # e.g., data/delta/patients_transformed
-        checkpoint_path = os.path.join(base_dir, checkpoints_path)  # e.g., data/checkpoints
+        output_path = os.path.join(
+            base_dir, delta_table_path
+        )  # e.g., data/delta/patients_transformed
+        checkpoint_path = os.path.join(
+            base_dir, checkpoints_path
+        )  # e.g., data/checkpoints
 
     # Load Databricks config only if needed
     elif target == "databricks":

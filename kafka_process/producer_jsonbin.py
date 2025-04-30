@@ -1,14 +1,13 @@
 import json
 import os
-import sys
 from kafka import KafkaProducer
 from dotenv import load_dotenv
+from ingestion_jsonio_api.ingestion_api import get_jsonbin_api
 
 load_dotenv(override=True)
-base_dir = os.getenv('AIRFLOW_HOME')
-kafka_config_file = os.getenv('KAFKA_CONFIG_FILE')
+base_dir = os.getenv("AIRFLOW_HOME")
+kafka_config_file = os.getenv("KAFKA_CONFIG_FILE")
 
-from ingestion_jsonio_api.ingestion_api import get_jsonbin_api
 
 # Load Kafka config
 config_path = os.path.join(base_dir, kafka_config_file)
