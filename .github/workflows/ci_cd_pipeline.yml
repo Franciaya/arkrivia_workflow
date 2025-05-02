@@ -35,7 +35,7 @@ jobs:
         run: |
           black --check .
           flake8 .
-          
+
       - name: Set PYTHONPATH
         run: echo "PYTHONPATH=$PWD" >> $GITHUB_ENV
                     
@@ -44,15 +44,15 @@ jobs:
           pip install pytest
           pytest tests/
 
-  deploy:
-    name: Deploy Application
-    needs: test  # Only runs if the "test" job succeeds
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
+  # deploy:
+  #   name: Deploy Application
+  #   needs: test  # Only runs if the "test" job succeeds
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout Repository
+  #       uses: actions/checkout@v3
 
-      - name: Deploy to Server (Example using AWS S3)
-        run: |
-          pip install boto3
-          python deploy.py
+  #     - name: Deploy to Server (Example using AWS S3)
+  #       run: |
+  #         pip install boto3
+  #         python deploy.py
