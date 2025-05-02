@@ -33,7 +33,6 @@ jobs:
 
       - name: Run Linting
         run: |
-          pip install flake8 black
           black --check .
           flake8 .
 

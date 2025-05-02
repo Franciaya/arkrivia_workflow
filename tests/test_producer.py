@@ -1,7 +1,7 @@
 import json
 import pytest
 from unittest.mock import patch, MagicMock, call
-from kafka_process.producer import (
+from kafka_process.producer_jsonbin import (
     load_patient_data,
     send_patient_data,
 )
