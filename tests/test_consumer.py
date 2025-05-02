@@ -7,14 +7,21 @@ from spark_process.spark_transform import (
     RemovePostcodeSectionTransform,
 )
 
+
 # Load test data dynamically from the JSON file
-@pytest.fixture
+@pytest.fixture(scope="session")
 def test_data():
     with open("tests/config/test_data.json", "r") as json_file:
         return json.load(json_file)
 
 
-@pytest.fixture(scope="class")
+@pytest.fixture(scope="session")
+def test_transform():
+    with open("tests/config/test_transform_config.json", "r") as json_file:
+        return json.load(json_file)
+
+
+@pytest.fixture(scope="session")
 def spark_session():
     # Create a Spark session for testing
     spark = SparkSession.builder.master("local[1]").appName("Test").getOrCreate()
@@ -22,18 +29,13 @@ def spark_session():
     spark.stop()
 
 
-def test_region_transform(spark_session, test_data):
+def test_region_transform(spark_session, test_data, test_transform):
     df_data = spark_session.createDataFrame(test_data)
-    transform = RegionTransform(
-        {
-            "mapping": {
-                "North England": ["Leeds", "Manchester"],
-                "Mid-West England": ["Birmingham"],
-            }
-        }
-    )
+    for transform_config in test_transform["transforms"]:
+        if transform_config["name"] == "Region":
+            transform = RegionTransform(transform_config)
     df_transformed = transform.modify_or_create(df_data)
-    assert "region_upper" in df_transformed.columns
+    assert "Region" in df_transformed.columns
 
 
 def test_replace_transform(spark_session, test_data):

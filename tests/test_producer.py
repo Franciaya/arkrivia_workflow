@@ -1,13 +1,13 @@
 import json
 import pytest
-from unittest.mock import patch, MagicMock
+from unittest.mock import patch, MagicMock, call
 from kafka_process.producer import (
     load_patient_data,
     send_patient_data,
-) 
+)
 
 # Load Kafka config and test data from actual files for the test
-with open("tests/config/test_kafka_config.json" , "r") as data_file:
+with open("tests/config/test_kafka_config.json", "r") as data_file:
     kafka_config = json.load(data_file)
 
 KAFKA_BROKER = kafka_config.get("broker")
@@ -15,7 +15,7 @@ KAFKA_TOPIC = kafka_config.get("topic")
 DATA_FILE = kafka_config.get("data_file")
 
 
-@pytest.fixture
+@pytest.fixture(scope="session")
 def test_data():
     # Load the test patient data from the JSON file dynamically
     with open(DATA_FILE, "r") as data_file:
@@ -45,7 +45,7 @@ def test_send_patient_data(
     kafka_topic = kafka_config["topic"]
 
     # Check if send was called with correct data
-    calls = [MagicMock().send(kafka_topic, value=record) for record in test_data]
+    calls = [call(kafka_topic, value=record) for record in test_data]
     mock_producer_instance.send.assert_has_calls(calls, any_order=True)
 
     # Ensure flush and close were called

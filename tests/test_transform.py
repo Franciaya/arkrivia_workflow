@@ -22,7 +22,7 @@ def test_df(spark):
 
 def test_remove_last_postcode_section(spark):
     # Load test data from JSON
-    with open("tests/test_data.json") as f:
+    with open("tests/config/test_data.json") as f:
         raw_data = json.load(f)
 
     # Create expected data

@@ -1,0 +1,22 @@
+{
+    "transforms": [
+      {
+        "name": "Region",
+        "type": "Rollup",
+        "mapping": {
+          "North England": ["Liverpool", "Manchester", "Birmingham"],
+          "Mid-West England": ["Oxford", "Cambridge", "York"],
+          "South England & Wales": ["Bristol", "Sheffield", "Cardiff", "Swansea", "Newport"]
+        }
+      },
+      {
+        "name": "PatientName",
+        "type": "Replace",
+        "new_value": "XXXXX"
+      },
+      {
+        "name": "PostCode",
+        "type": "RemoveLastSection"
+      }
+    ]
+  }
