@@ -40,9 +40,11 @@ jobs:
         run: echo "PYTHONPATH=$PWD" >> $GITHUB_ENV
       
       - name: Run Unit Tests
+        working-directory: ${{ github.workspace }}
         env:
-          KAFKA_CONFIG_FILE: config/kafka_config.json
+          KAFKA_CONFIG_PATH: config/kafka_config.json
         run: |
+          ls -la config  # Optional: Verify the file exists
           pytest tests/
 
   # deploy:
