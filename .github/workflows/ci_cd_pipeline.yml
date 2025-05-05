@@ -39,10 +39,11 @@ jobs:
       - name: Set PYTHONPATH
         run: echo "PYTHONPATH=$PWD" >> $GITHUB_ENV
 
-      - name: Symlink expected config path
+      - name: Simulate expected config file path
+        working-directory: ${{ github.workspace }}
         run: |
           mkdir -p /home/runner/Documents/akrivia_assessment/config
-          ln -s $GITHUB_WORKSPACE/config/kafka_config.json /home/runner/Documents/akrivia_assessment/config/kafka_config.json
+          cp config/kafka_config.json /home/runner/Documents/akrivia_assessment/config/kafka_config.json
           sudo ln -s /home/runner/Documents /Users
       
       - name: Run Unit Tests
