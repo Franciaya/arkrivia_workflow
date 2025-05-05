@@ -22,9 +22,9 @@ def test_data():
         return json.load(data_file)
 
 
-@patch("kafka_process.producer.KafkaProducer")
-@patch("kafka_process.producer.load_patient_data")
-@patch("kafka_process.producer.json.load")
+@patch("kafka_process.producer_jsonbin.KafkaProducer")
+@patch("kafka_process.producer_jsonbin.load_patient_data")
+@patch("kafka_process.producer_jsonbin.json.load")
 def test_send_patient_data(
     mock_json_load, mock_load_patient_data, mock_kafka_producer, test_data
 ):
@@ -53,11 +53,13 @@ def test_send_patient_data(
     mock_producer_instance.close.assert_called_once()
 
 
-def test_load_patient_data():
-    # Load actual test data from file
-    result = load_patient_data(DATA_FILE)
+@patch("kafka_process.producer_jsonbin.get_jsonbin_api")
+def test_mocked_load_patient_data(mock_get_jsonbin_api, test_data):
+    # Mock the API response with test data (2 records)
+    mock_get_jsonbin_api.return_value = test_data
 
-    with open(DATA_FILE, "r") as fs:
-        expected_data = json.load(fs)
+    # Call the real load_patient_data (which will call the mocked API)
+    result = load_patient_data()
 
-    assert result == expected_data
+    # Assert that it returns the mocked data
+    assert result == test_data
