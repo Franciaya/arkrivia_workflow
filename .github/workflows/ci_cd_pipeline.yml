@@ -39,11 +39,12 @@ jobs:
       - name: Set PYTHONPATH
         run: echo "PYTHONPATH=$PWD" >> $GITHUB_ENV
 
-      - name: Create expected config path
+      - name: Symlink expected config path
         run: |
-          mkdir -p /Users/francisayanbadejo/Documents/akrivia_assessment/config
-          cp config/kafka_config.json /Users/francisayanbadejo/Documents/akrivia_assessment/config/kafka_config.json
-                
+          mkdir -p /home/runner/Documents/akrivia_assessment/config
+          ln -s $GITHUB_WORKSPACE/config/kafka_config.json /home/runner/Documents/akrivia_assessment/config/kafka_config.json
+          sudo ln -s /home/runner/Documents /Users
+      
       - name: Run Unit Tests
         run: |
           pip install pytest
