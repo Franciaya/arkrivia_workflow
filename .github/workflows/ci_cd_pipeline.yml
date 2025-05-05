@@ -40,11 +40,9 @@ jobs:
         run: echo "PYTHONPATH=$PWD" >> $GITHUB_ENV
 
       - name: Simulate expected config file path
-        working-directory: ${{ github.workspace }}
+        working-directory: config
         run: |
-          mkdir -p /home/runner/Documents/akrivia_assessment/config
-          cp config/kafka_config.json /home/runner/Documents/akrivia_assessment/config/kafka_config.json
-          sudo ln -s /home/runner/Documents /Users
+          ls -la
       
       - name: Run Unit Tests
         run: |
