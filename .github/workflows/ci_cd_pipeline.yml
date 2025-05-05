@@ -38,7 +38,10 @@ jobs:
 
       - name: Set PYTHONPATH
         run: echo "PYTHONPATH=$PWD" >> $GITHUB_ENV
-                    
+
+      - name: Check kafka_config.json exists
+        run: ls config/kafka_config.json
+                
       - name: Run Unit Tests
         run: |
           pip install pytest
